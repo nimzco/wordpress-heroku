@@ -15,7 +15,8 @@
  */
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
-$db = parse_url('postgres://fjmcknhiqejynw:5SRGmTDyEYpKmRg-TYmwW4VDbM@ec2-54-225-112-205.compute-1.amazonaws.com:5432/d7heui2l2fqq2f');
+//$db = parse_url('postgres://fjmcknhiqejynw:5SRGmTDyEYpKmRg-TYmwW4VDbM@ec2-54-225-112-205.compute-1.amazonaws.com:5432/d7heui2l2fqq2f');
+$db = parse_url($_ENV["DATABASE_URL"]);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
@@ -53,6 +54,7 @@ define('AUTH_SALT',        'oK3u#hko4#6:+%&Tn{3b_&-pzN{#_qeI)^x^-}FmJh~fC]/Ss_Q$
 define('SECURE_AUTH_SALT', 'pT3ubkojDIw5|{0|!+aw5rS?j%F%g7BB/8lnFH&D/*,QD #_MIyqx+T[kLy-.O+c');
 define('LOGGED_IN_SALT',   '<aE@Tq14l,p994DMd0>~_N/Z=opG!G>(yea%>nB;#wl9WMxnt7Ze1q|r_gCoY_em');
 define('NONCE_SALT',       'T[eNl@s`MXxi5Vp>jI?#KLxCtIKD~JRs}P}/.wse-k*I31N)IeqD*tzt9:`}qBwz');
+
 
 /**#@-*/
 

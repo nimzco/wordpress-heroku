@@ -3,7 +3,6 @@
 RewriteEngine On
 RewriteBase /
 RewriteBase /blog/
-RewriteBase /wp-admin/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

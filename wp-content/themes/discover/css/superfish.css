@@ -86,7 +86,7 @@ border-bottom: 1px solid #4c4c4c;
 }
 
 #nav li ul {
-	background:	#fd7800;
+	background:	#e75a2b;
 }
 
 #nav li:hover, #nav li.sfHover,
@@ -94,19 +94,19 @@ border-bottom: 1px solid #4c4c4c;
 #nav a:focus, #nav a:hover, #nav a:active {
 	outline: 0;
 	color: #fff;
-	background:	#444;
+	background:	#2AADA3;
 }
 
 #nav li ul li:hover, #nav li ul li.sfHover,
 #nav li ul li a:focus, #nav li ul li a:hover, #nav li ul li a:active {
 	outline: 0;
 	color: #fff;
-	background:	#fd7800;
+	background:	#e75a2b;
 }
 
 #nav li.current_page_item > a,
 #nav li.current-menu-item > a,
 #nav li.current-cat > a {
 	color: #fff;
-	background: #fd7800;
+	background: #e75a2b;
 }

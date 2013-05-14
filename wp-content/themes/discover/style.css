@@ -15,13 +15,13 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
- * Note: see the "license.htm" page for copyright and 
+ *
+ * Note: see the "license.htm" page for copyright and
  * license information for bundled resources, including images
 */
 
@@ -35,14 +35,14 @@ body {
 	font: normal 12px Verdana, sans-serif;
 	color: #777;
 	line-height:18px;
-	border-top: 4px solid #fd7800;
+	border-top: 4px solid #e75a2b;
 }
-	
+
 a {
 	color: #000;
 	outline: 0;
 }
-	
+
 a:link {
 	text-decoration: none;
 }
@@ -269,7 +269,7 @@ th {
 }
 
 
-/*footer*/	
+/*footer*/
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
@@ -363,7 +363,7 @@ th {
 }
 
 #footer-widget .widget-container ul li a	{
-	color:#fd7800;
+	color:#e75a2b;
 }
 
 #footer-widget .widget-container ul li a:hover	{
@@ -385,10 +385,10 @@ th {
 	padding: 5px 0px;
 	background: none;
 	}
-	
+
 #footer-widget ul {
 	margin-left: 0px;
-	}	
+	}
 
 #footer-bar1 {
 	padding-right: 40px;
@@ -403,7 +403,7 @@ th {
 
 span#follow-box{
 	position: absolute;
-	right: 100px;	
+	right: 100px;
 }
 
 span#follow-box img{
@@ -437,7 +437,7 @@ span#follow-box img{
 }
 
 #logo2 a, #slogan{
-	color: #fd7800;
+	color: #e75a2b;
 }
 
 #slogan{
@@ -554,7 +554,7 @@ span#follow-box img{
 
 .post {
 	overflow: hidden;
-	
+
 }
 
 .post-shadow{
@@ -582,7 +582,7 @@ span#follow-box img{
 	list-style: decimal;
 	margin: 0 0 18px 1.6em;
 }
-.post-entry ol li { 
+.post-entry ol li {
 	list-style: decimal;
  }
 
@@ -637,7 +637,7 @@ span#follow-box img{
 }
 
 .meta-data a{
-	color: #fd7800;
+	color: #e75a2b;
 }
 
 .meta-data a:hover{
@@ -651,7 +651,7 @@ color: #000;
 	  border: 1px solid #ddd;
 	  -moz-border-radius: 3px;
 	  -webkit-border-radius: 3px;
-	  border-radius: 3px;	  
+	  border-radius: 3px;
 	  display: inline-block;
 	  font-size: 11px;
 	  font-weight: bold;
@@ -664,7 +664,7 @@ color: #000;
 
 .read-more:hover{
 	background: #fff;
-	color: #666;	
+	color: #666;
 }
 
 .clear {
@@ -672,7 +672,7 @@ color: #000;
 }
 
 .sticky {
-  
+
 }
 
 /* content */
@@ -682,7 +682,7 @@ color: #000;
 	margin: 0 -1px 24px 0;
 	text-align: left;
 	width: 100%;
-	
+
 }
 #content_container tr th,
 #content_container thead th {
@@ -770,7 +770,7 @@ h3#comments-title {
 #comments .comment-body ol {
 	margin: 5px 0 15px 20px;
 }
-#comments .comment-body ol li { 
+#comments .comment-body ol li {
 	margin: 5px 0;
 	list-style: decimal;
 	padding: 0 0 0 5px;
@@ -823,7 +823,7 @@ h3#comments-title {
 }
 .reply a:hover {
 	background-color:#d2d2d2;
-	
+
 }
 .commentlist .children {
 	list-style: none;
@@ -949,14 +949,14 @@ h3#reply-title {
 	color: #333;
 	display:block;
 	}
-	
+
 .contactform input {
 	padding:5px;
 	width:350px;
 	border:1px solid #ebebeb;
 	color: #666;
 	}
-	
+
 .contactform textarea {
 	color: #666;
 	height:100px;
@@ -967,7 +967,7 @@ h3#reply-title {
 
 .contactform p {
 	margin-bottom:10px;
-}	
+}
 
 .contactform .submit input {
 	width: auto;
@@ -978,7 +978,7 @@ h3#reply-title {
 	color: #777;
 	float: right;
 	margin-right: 145px;
-}	
+}
 
 .contactform .submit input:hover {
 	background-color:#d2d2d2;
@@ -1047,7 +1047,7 @@ h3#reply-title {
 }
 
 .flex-caption{
-background: #232323;	
+background: #232323;
 color: #fff;
 padding: 7px;
 }
@@ -1072,28 +1072,28 @@ padding: 7px;
 }
 
 .wp-pagenavi a.page {
-	padding: 2px 5px; 
+	padding: 2px 5px;
 	margin: 2px;
 	text-decoration: none;
 	background: #f6f6f6;
 }
 
 .wp-pagenavi span.current {
-	padding: 2px 5px; 
+	padding: 2px 5px;
 	margin: 2px;
 	font-weight: bold;
 	background: #000;
 	color: #fff;
 }
 .wp-pagenavi span.extend {
-	padding: 2px 5px; 
+	padding: 2px 5px;
 	margin: 2px;
 	background: #f6f6f6;
 	text-decoration: none;
 }
 
 .wp-pagenavi span.pages {
-	padding: 2px 5px; 
+	padding: 2px 5px;
 	margin: 2px;
 	background: #f6f6f6;
 }
@@ -1139,7 +1139,7 @@ padding: 7px;
 
 .widget-container-primary ul li a	{
 	text-decoration:none;
-	color:#fd7800;
+	color:#e75a2b;
 }
 
 .widget-container-primary ul li a:hover	{
@@ -1148,7 +1148,7 @@ padding: 7px;
 }
 
 .widget-container-primary h3 {
-	color: #fff; 
+	color: #fff;
 	overflow: hidden;
 	font-size: 18px;
 	font-weight: 500;
@@ -1164,7 +1164,7 @@ padding: 7px;
 }
 
 .widget-container-primary .widget-title span{
-		
+
 }
 
 .widget-container-primary ul li {
@@ -1228,7 +1228,7 @@ padding: 7px;
 	text-decoration: none;
 	margin: 5px;
 	line-height: 24px;
-	
+
 }
 
 /*Alignments */

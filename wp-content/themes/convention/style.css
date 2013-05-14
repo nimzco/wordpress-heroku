@@ -743,12 +743,21 @@ img.wp-smiley {
 }
 
 #blogtitle {
-	font-family: Helvetica;
+	background-image 			 : url(https://s3-eu-west-1.amazonaws.com/coursavenue-blog/blog_logo.png);
+	background-repeat 		 : no-repeat;
+	-webkit-background-size: 100%;
+	   -moz-background-size: 100%;
+	     -o-background-size: 100%;
+	background-size : 100%;
+	height 					: 130px;
+	width  					: 500px;
+	font-size: 0;
+	/*font-family: Helvetica;
 	font-weight: 100;
 	color: #69686A;
 	word-break: break-word;
 	width:1000px;
-	font-size: 40px;
+	font-size: 40px;*/
 }
 
 #blogdescription {
@@ -1086,14 +1095,15 @@ div.category-links a {
 }
 
 #footer {
-	text-transform:capitalize;
+	display: none;
+	/*text-transform:capitalize;
 	font-family: Helvetica;
 	font-weight: 100;
     font-size: 12px;
     letter-spacing: .2em;
 	text-align: center;
 	margin: 20px 0;
-	color:#838383;
+	color:#838383;*/
 }
 
 

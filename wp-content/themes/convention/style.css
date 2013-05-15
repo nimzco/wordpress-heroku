@@ -742,6 +742,10 @@ img.wp-smiley {
 	margin: 30px auto 0 auto;
 }
 
+#blogtitle a {
+	display: block;
+	height : 100%;
+}
 #blogtitle {
 	background-image 			 : url(https://s3-eu-west-1.amazonaws.com/coursavenue-blog/blog_logo.png);
 	background-repeat 		 : no-repeat;
@@ -810,7 +814,27 @@ img.wp-smiley {
 	float: right;
 }
 
+.post-thumbnail {
+	float: left;
+}
+.post-thumbnail a {
+	display: block;
+	height: 100%;
+}
+.post-thumbnail img {
+	margin-top: 0;
+	height: auto;
+}
+.post-thumbnail-index img {
+	width: 200px;
+}
+/*.post-wrapper > post-thumbnail{
 
+}
+.post-wrapper > p, .post-wrapper > div{
+		display: inline-block;
+		vertical-align: middle;;
+}*/
 /* --------- Articles --------- */
 
 #article {

@@ -12,10 +12,9 @@
 <div class="article-title"><a class="h1" href="<?php esc_url( the_permalink() ); ?>"><?php the_title(); ?></a></br>
 <div class="article-meta"><img class="meta" src="<?php echo get_template_directory_uri() . '/icons/calendar.png'; ?>" width="12"> &nbsp;<?php convention_get_date(); ?></div></div>
 
-<?php if ( has_post_thumbnail() ) { ?><div class="post-thumbnail"><a href="<?php esc_url( the_permalink() ); ?>"><?php the_post_thumbnail(); ?></a></div><?php } ?>
+  <?php if ( has_post_thumbnail() ) { ?><div class="post-thumbnail post-thumbnail-index"><a href="<?php esc_url( the_permalink() ); ?>"><?php the_post_thumbnail(); ?></a></div><?php } ?>
 
-<?php the_excerpt( __( 'Lire la suite <span class="meta-nav">&rarr;</span>', 'convention' ) ); ?>
-
+  <?php the_excerpt( __( 'Lire la suite <span class="meta-nav">&rarr;</span>', 'convention' ) ); ?>
 <div class="clear"></div>
 
 </div></div>

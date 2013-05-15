@@ -822,8 +822,9 @@ img.wp-smiley {
 	height: 100%;
 }
 .post-thumbnail img {
-	margin-top: 0;
-	height: auto;
+	margin-top   : 0;
+	margin-bottom: 50px;
+	height 			 : auto;
 }
 .post-thumbnail-index img {
 	width: 200px;

@@ -15,14 +15,14 @@
 <div class="article-title"><a class="h1" href="<?php esc_url( the_permalink() ); ?>"><?php the_title(); ?></a></br>
 <div class="article-meta"><img class="meta" src="<?php echo get_template_directory_uri() . '/icons/user.png'; ?>" width="10">&nbsp;&nbsp;<?php the_author(); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="meta" src="<?php echo get_template_directory_uri() . '/icons/calendar.png'; ?>" width="12"> &nbsp;&nbsp;<?php convention_get_date(); ?></div></div>
 
-<?php the_excerpt( __( 'Continue reading &rarr;', 'convention' ) ); ?>
+<?php the_excerpt( __( 'Lire la suite &rarr;', 'convention' ) ); ?>
 
 <div class="clear"></div>
 
 </div></div>
 
 
-<?php endwhile; ?> 
+<?php endwhile; ?>
 
 
 <?php endif; ?>

@@ -385,7 +385,7 @@ input[type=submit]:hover {
 	color: #69686A;
     padding:50px;
     font-family: Helvetica;
-    line-height: 27px;
+    line-height: 23px;
 }
 
 .comment{
@@ -820,7 +820,7 @@ img.wp-smiley {
 	color: #69686A;
     padding:50px 50px 40px 50px;
     font-family: Helvetica;
-    line-height: 27px;
+    line-height: 23px;
 }
 
 #calendar {
@@ -831,7 +831,7 @@ img.wp-smiley {
 	color: #69686A;
     padding:50px;
     font-family: Helvetica;
-    line-height: 27px;
+    line-height: 23px;
 }
 
 #article:first-child {
@@ -860,7 +860,7 @@ img.wp-smiley {
 }
 
 #article .article-title {
-	line-height: 37px;
+	line-height: 25px;
 	margin:0 0 20px 0;
 	padding:0 0 15px 0;
 	border-bottom: 1px dotted #a9a9a9;
@@ -1014,7 +1014,7 @@ img.wp-smiley {
     color: #69686A;
     width:210px;
     font-family: Helvetica;
-    line-height: 27px;
+    line-height: 23px;
 }
 
 li.recentcomments {

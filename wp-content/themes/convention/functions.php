@@ -10,7 +10,7 @@ if ( ! isset( $content_width ) ) $content_width = 600;
 
 
 // Custom Menus
- 
+
 function convention_nav() {
     register_nav_menus(array(
         'header-nav' => 'Header Menu',
@@ -23,7 +23,7 @@ add_action('init', 'convention_nav');
 
 function convention_excerpt_more($more) {
        global $post;
-	return ' <a href="'. get_permalink($post->ID) . '">'.__( 'Continue reading &rarr;', 'convention' ).'</a>';
+	return ' <a href="'. get_permalink($post->ID) . '">'.__( 'Lire la suite &rarr;', 'convention' ).'</a>';
 }
 add_filter('excerpt_more', 'convention_excerpt_more');
 
@@ -37,8 +37,8 @@ locate_template( array( '/inc/password-form.php' ), true );
 // Stylesheets
 
 function convention_style() {
- wp_register_style('convention_css', get_stylesheet_uri(), array(), null, 'all'); 
- wp_enqueue_style('convention_css');	 
+ wp_register_style('convention_css', get_stylesheet_uri(), array(), null, 'all');
+ wp_enqueue_style('convention_css');
 }
 
 add_action('wp_enqueue_scripts', 'convention_style');
@@ -53,7 +53,7 @@ locate_template( array( '/inc/register-sidebar.php' ), true );
 locate_template( array( '/inc/custom-header.php' ), true );
 
 // Filter for Untitled Articles
-        
+
 add_filter('the_title', 'convention_title');
 function convention_title($title) {
 	if ( $title == '' ) {
@@ -66,11 +66,11 @@ function convention_title($title) {
 // Fields
 
 function convention_fields($convention_fields) {
- $convention_fields['author'] = '<p class="comment-form-author">' . '<label for="author">' . __( 'Name*', 'convention' ) . '</label></br><input id="author" name="author" type="text" value="" size="30" /></p>';
+ $convention_fields['author'] = '<p class="comment-form-author">' . '<label for="author">' . __( 'Nom*', 'convention' ) . '</label></br><input id="author" name="author" type="text" value="" size="30" /></p>';
 
 $convention_fields['email'] = '<p class="comment-form-email"><label for="email">' . __( 'E-Mail*', 'convention' ) . '</label></br> <input id="email" name="email" type="text" value="" size="30"/></p>';
 
-$convention_fields['url'] = '<p class="comment-form-url"><label for="url">' . __( 'Website', 'convention' ) . '</label></br><input id="url" name="url" type="text" value="" size="30" /></p>';
+$convention_fields['url'] = '<p class="comment-form-url"><label for="url">' . __( 'Site', 'convention' ) . '</label></br><input id="url" name="url" type="text" value="" size="30" /></p>';
 
  return $convention_fields;
 }
@@ -81,7 +81,7 @@ add_filter('comment_form_default_fields','convention_fields');
 // Comment Form
 
 function convention_comment($comment, $args, $depth) {
-  
+
 
 $GLOBALS['comment'] = $comment;
 		extract($args, EXTR_SKIP);
@@ -99,9 +99,9 @@ $GLOBALS['comment'] = $comment;
 		<div class="comment">
 		<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
 		<?php endif; ?>
-		
-	
-		
+
+
+
 		<?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['avatar_size'] ); ?>
 		<div class="comment-box">
 		<div class="comment-name"><?php printf(__('%s', 'convention'), get_comment_author_link()) ?> </div>
@@ -115,9 +115,9 @@ $GLOBALS['comment'] = $comment;
 		<?php if ($comment->comment_approved == '0') : ?>
 		<em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.', 'convention') ?></em></br>
 		<?php endif; ?>
-		
+
 		<?php comment_text() ?>
-		
+
 		<div class="comment-reply">
 		<?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?><?php edit_comment_link( __('Edit', 'convention'),'','' );
 			?></div>
@@ -127,9 +127,9 @@ $GLOBALS['comment'] = $comment;
 
 				<?php if ( 'div' != $args['style'] ) : ?>
 		</div><div style="clear:both;"></div>
-		<?php endif; 
-  
-  
+		<?php endif;
+
+
 }
 
 // Output Date of an Article
@@ -154,7 +154,7 @@ function convention_other_themes () {
 
 
 function convention_admin_enqueue() {
- 
+
    wp_enqueue_style( 'admin_style', get_template_directory_uri() . '/css/options.css', array(), null, 'all' );
 }
 

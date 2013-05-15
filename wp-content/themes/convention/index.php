@@ -14,7 +14,7 @@
 
 <?php if ( has_post_thumbnail() ) { ?><div class="post-thumbnail"><a href="<?php esc_url( the_permalink() ); ?>"><?php the_post_thumbnail(); ?></a></div><?php } ?>
 
-<?php the_content( __( 'Continue reading &rarr;', 'convention' ) ); ?>
+<?php the_excerpt( __( 'Lire la suite <span class="meta-nav">&rarr;</span>', 'convention' ) ); ?>
 
 <div class="clear"></div>
 

@@ -815,7 +815,8 @@ img.wp-smiley {
 }
 
 .post-thumbnail {
-	float: left;
+	float  	  : left;
+	min-height: 120px;
 }
 .post-thumbnail a {
 	display: block;
@@ -823,7 +824,6 @@ img.wp-smiley {
 }
 .post-thumbnail img {
 	margin-top   : 0;
-	margin-bottom: 50px;
 	height 			 : auto;
 }
 .post-thumbnail-index img {

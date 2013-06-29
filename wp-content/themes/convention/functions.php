@@ -161,6 +161,4 @@ function convention_admin_enqueue() {
 
 add_action( 'admin_enqueue_scripts', 'convention_admin_enqueue' );
 
-remove_action( 'wp_head', 'feed_links_extra', 3 ); // Just do this yourself in 3.0+
-
 ?>

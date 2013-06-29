@@ -1,5 +1,11 @@
 <?php
 
+function disable_category_tag_feed () {
+	return;
+}
+add_filter('category_feed_link', 'disable_category_tag_feed');
+//  See more at: http://www.lostsaloon.com/technology/disable-category-and-tag-rss-feeds-in-wordpress/#sthash.DrUgUCew.dpuf
+
 add_theme_support( 'automatic-feed-links' );
 add_editor_style();
 add_theme_support('post-thumbnails');

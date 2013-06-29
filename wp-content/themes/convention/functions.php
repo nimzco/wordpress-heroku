@@ -1,7 +1,7 @@
 <?php
 
 
-add_theme_support( 'automatic-feed-links' );
+// add_theme_support( 'automatic-feed-links' );
 add_editor_style();
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size( 650, 250, true );

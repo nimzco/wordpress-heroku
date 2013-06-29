@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: AA's Digg Digg Alternative
-Plugin URI: http://www.android-advice.com/2012/faster-seo-friendly-digg-digg-alternative-wordpress-plugin/
+Plugin URI: http://www.brandonorndorff.com/wordpress/plugins/aas-digg-digg-alternative-wordpress-plugin/
 Description: Floating social bar for those that don't want to use the content heavy and slow Digg Digg bar.  This bar only has the code required to create the floating bar with sharing to increase page speed and less code.
-Version: 1.4.2
+Version: 1.4.5
 Author: Brandon Orndorff
 Author URI: http://www.android-advice.com
 License: GPL2
@@ -40,8 +40,6 @@ class Mokis_Digg_Alt_Controller {
 		add_option("mokis_social_static_homepage", '-1', '', 'yes');
 	}
 	function activate() {
-		add_option("mokis_social_data_credit", '1', '', 'yes');
-		update_option('mokis_social_data_credit', '1');
 		add_option("mokis_social_ignore_posts", '', '', 'yes');
 		add_option("mokis_social_ignore_pages", '', '', 'yes');
 		add_option("mokis_social_bgcolor", '#FFFFFF', '', 'yes');
@@ -113,14 +111,11 @@ function moki_add_social_content($content) {
 <?php if(get_option('mokis_show_linkedin') == 1){ ?><span style="padding-top:5px; display:block;"><script src="//platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-counter="top"></script></span><?php } ?>
 <?php if(get_option('mokis_show_pinterest') == 1){ ?><span style="padding-top:5px; display:block;"><br /><a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php if(function_exists('the_post_thumbnail')) echo wp_get_attachment_url(get_post_thumbnail_id()); ?>&description=<?php echo get_the_title(); ?>" class="pin-it-button" count-layout="vertical">Pin It</a><script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script></span><?php } ?>
 <?php if(get_option('mokis_show_reddit') == 1){ ?><span style="padding-top:5px; display:block;"><script type="text/javascript" src="http://www.reddit.com/static/button/button2.js"></script></span><?php } ?>
-<?php if(get_option('mokis_social_data_credit') == 1){ ?><span style="line-height:10px;padding-top:5px; display:block;"><a href="http://www.android-advice.com" target="_blank" title="Android News, Tutorials, how to's, applications'" style="font-size:9px;">Powered By:<br />Android Advice</a></span><?php } ?>
 </div>
 </div>
 <?php
 } //end if is_single
-?>
 
-<?php
 //Start if is Page
 	$pagestoignore = get_option('mokis_social_ignore_pages');
 	$pagestoignore = explode( ',', $pagestoignore );
@@ -151,14 +146,11 @@ function moki_add_social_content($content) {
 <?php if(get_option('mokis_show_linkedin') == 1){ ?><span style="padding-top:5px; display:block;"><script src="//platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-counter="top"></script></span><?php } ?>
 <?php if(get_option('mokis_show_pinterest') == 1){ ?><span style="padding-top:5px; display:block;"><br /><a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php if(function_exists('the_post_thumbnail')) echo wp_get_attachment_url(get_post_thumbnail_id()); ?>&description=<?php echo get_the_title(); ?>" class="pin-it-button" count-layout="vertical">Pin It</a><script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script></span><?php } ?>
 <?php if(get_option('mokis_show_reddit') == 1){ ?><span style="padding-top:5px; display:block;"><script type="text/javascript" src="http://www.reddit.com/static/button/button2.js"></script></span><?php } ?>
-<?php if(get_option('mokis_social_data_credit') == 1){ ?><span style="line-height:10px;padding-top:5px; display:block;"><a href="http://www.android-advice.com" target="_blank" title="Android News, Tutorials, how to's, applications'" style="font-size:9px;">Powered By:<br />Android Advice</a></span><?php } ?>
 </div>
 </div>
 <?php
 } //end if is_page
-?>
 
-<?php
 //Start if is Home
 	if ( (is_home() && get_option('mokis_social_data_home') == 1) || ( is_page(get_option('mokis_social_static_homepage')) && get_option('mokis_social_data_home') == 1) ){
 	?>
@@ -187,16 +179,13 @@ function moki_add_social_content($content) {
 <?php if(get_option('mokis_show_linkedin') == 1){ ?><span style="padding-top:5px; display:block;"><script src="//platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-counter="top"></script></span><?php } ?>
 <?php if(get_option('mokis_show_pinterest') == 1){ ?><span style="padding-top:5px; display:block;"><br /><a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php if(function_exists('the_post_thumbnail')) echo wp_get_attachment_url(get_post_thumbnail_id()); ?>&description=<?php echo get_the_title(); ?>" class="pin-it-button" count-layout="vertical">Pin It</a><script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script></span><?php } ?>
 <?php if(get_option('mokis_show_reddit') == 1){ ?><span style="padding-top:5px; display:block;"><script type="text/javascript" src="http://www.reddit.com/static/button/button2.js"></script></span><?php } ?>
-<?php if(get_option('mokis_social_data_credit') == 1){ ?><span style="line-height:10px;padding-top:5px; display:block;"><a href="http://www.android-advice.com" target="_blank" title="Android News, Tutorials, how to's, applications'" style="font-size:9px;">Powered By:<br />Android Advice</a></span><?php } ?>
 </div>
 </div>
 <?php
 } //end if is_home
 
-//return $content;
 } //end function
 
-//add_filter ('the_content', 'moki_add_social_content', 0);
 add_action('wp_head', 'moki_add_social_content');
 ?>
 <?php

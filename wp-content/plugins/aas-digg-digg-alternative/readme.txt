@@ -1,8 +1,8 @@
 === AA's Digg Digg Alternative ===
-Tags: social, share, dig, Facebook, twitter, stumble, gplus, google plus, social sharing, toolbar, floating bar, social plugin, social share, google+, dig dig, stumble upon, twitter share, Facebook like, twitter follow, digg digg, social floater, static social sharing, simple digg digg
+Tags: social, share, digg, Facebook, twitter, stumble, gplus, google plus, social sharing, toolbar, floating bar, social plugin, social share, google+, digg digg, stumble upon, twitter share, Facebook like, twitter follow, social floater, static social sharing, simple digg digg
 Requires at least: 3.0.1
-Tested up to: 3.5
-Stable tag: 1.4.2
+Tested up to: 3.5.2
+Stable tag: 1.4.5
 Contributors: Brandon_Orndorff
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,6 +43,10 @@ If you have any questions please visit the [Digg Digg Alternative Plugin Page](h
 Visit Android Advice and view a post to see the Toolbar in action - [Android Advice Plugin Homepage](http://www.android-advice.com/ "Digg Digg Alternative")
 
 == Changelog ==
+
+= 1.4.5 =
+* Made a few minor changes to fix some Templates errors
+* Removed Credit link from bar completely
 
 = 1.4.2 =
 * Added Reddit to the Social Button List.

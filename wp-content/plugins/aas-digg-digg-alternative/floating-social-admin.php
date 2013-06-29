@@ -21,7 +21,6 @@ if(isset($_POST['mokis_social_data_left'])){
 	update_option('mokis_social_border_color', $_POST['mokis_social_border_color']);
 	update_option('mokis_social_ignore_posts', $_POST['mokis_social_ignore_posts']);
 	update_option('mokis_social_ignore_pages', $_POST['mokis_social_ignore_pages']);
-	update_option('mokis_social_data_credit', $_POST['mokis_social_data_credit']);
 	update_option('mokis_social_static_homepage', $_POST['mokis_social_static_homepage']);
 	
 	$mokisfloatsuccess = "Settings Updated Successfully!";
@@ -31,7 +30,7 @@ if(isset($_POST['mokis_social_data_left'])){
 <iframe src="http://www.android-advice.com/plugin-news.php" name="right" scrolling="auto" frameborder="0" height = "150px" width = "800px">
 </iframe>
 
- <h3 style="color:green;"><?php echo $mokisfloatsuccess; ?></h3>
+<h3 style="color:green;"><?php echo $mokisfloatsuccess; ?></h3>
 
 <form method="post" action="">
 <h2>AA's Social Floater Plugin &raquo; Settings</h2>
@@ -83,7 +82,6 @@ if(isset($_POST['mokis_social_data_left'])){
              <label for="mokis_social_border_color">
                  <p><input type="text" name="mokis_social_border_color" value="<?php echo get_option('mokis_social_border_color'); ?>" style="width:100px;" /> :<b>Floating Bar Border Color (HEX i.e #999999 for gray)</b></p>
              </label>
-             
              <hr />
              
              <?php
@@ -98,8 +96,7 @@ if(isset($_POST['mokis_social_data_left'])){
 			 if(get_option('mokis_social_data_posts') == 1) {$postsshowchecked = checked;}
 			 if(get_option('mokis_social_data_pages') == 1) {$pagesshowchecked = checked;}
 			 if(get_option('mokis_social_data_home') == 1) {$homeshowchecked = checked;}
-			 if(get_option('mokis_social_data_credit') == 1) {$creditchecked = checked;}
-             ?>
+			 ?>
              
              <h2>Social Network Display Settings:</h2>
              <h3>We recommend no more than 5 sharing options for SEO although to each his own :)</h3>
@@ -150,16 +147,8 @@ if(isset($_POST['mokis_social_data_left'])){
                  <p><input type="text" name="mokis_social_static_homepage" value="<?php echo get_option('mokis_social_static_homepage'); ?>" style="width:40px;" /> :<b>Homepage's page ID if using Static Home Page</b> - if not using set to -1 or all pages will show the bar (just for you pwizard :)</p>
              </label>
              
-             <hr />
-             
-             <h2>Other Settings:</h2>
-             <label for="mokis_social_data_credit">
-                 <p><input type="checkbox" name="mokis_social_data_credit" value="1" <?php echo $creditchecked; ?> /> : Check this box to show powered by on your Floating bar.  Please keep in mind that this is a free plugin and this is how we get others interested to continue development.</p>
-             </label>
-             
-             <br /><br />
-             <a href="http://www.android-advice.com/2012/faster-seo-friendly-digg-digg-alternative-wordpress-plugin/" title="Digg Digg Alternative Social Toolbar" target="_blank">AA's Social Toolbar</a> - This is where you can request features, report bugs, or just talk about the plugin in general.
-             
+             <hr /><br />
+             <a href="http://www.brandonorndorff.com/wordpress/plugins/aas-digg-digg-alternative-wordpress-plugin/" title="Digg Digg Alternative Social Toolbar" target="_blank">AA's Social Toolbar</a> - This is where you can request features, report bugs, or just talk about the plugin in general.
          </td>
 	   </tr>
 	</tbody>

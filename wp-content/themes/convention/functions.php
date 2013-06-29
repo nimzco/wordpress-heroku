@@ -1,10 +1,5 @@
 <?php
 
-function disable_category_tag_feed () {
-	return;
-}
-add_filter('category_feed_link', 'disable_category_tag_feed');
-//  See more at: http://www.lostsaloon.com/technology/disable-category-and-tag-rss-feeds-in-wordpress/#sthash.DrUgUCew.dpuf
 
 add_theme_support( 'automatic-feed-links' );
 add_editor_style();
@@ -166,5 +161,6 @@ function convention_admin_enqueue() {
 
 add_action( 'admin_enqueue_scripts', 'convention_admin_enqueue' );
 
+remove_action( 'wp_head', 'feed_links_extra', 3 ); // Just do this yourself in 3.0+
 
- ?>
+?>

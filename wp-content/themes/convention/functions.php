@@ -2,6 +2,9 @@
 
 
 // add_theme_support( 'automatic-feed-links' );
+remove_action( 'wp_head', 'feed_links', 2 );
+remove_action( 'wp_head', 'feed_links_extra', 3 );
+
 add_editor_style();
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size( 650, 250, true );

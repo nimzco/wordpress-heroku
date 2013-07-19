@@ -16,13 +16,13 @@
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
 //$db = parse_url('postgres://fjmcknhiqejynw:5SRGmTDyEYpKmRg-TYmwW4VDbM@ec2-54-225-112-205.compute-1.amazonaws.com:5432/d7heui2l2fqq2f');
-$db = parse_url($_ENV["DATABASE_URL"]);
-// $db = parse_url('postgres://wordpress:wordpress@localhost:5432/wordpress"');
+// $db = parse_url($_ENV["DATABASE_URL"]);
+$db = parse_url('postgres://wordpress:wordpress@localhost:5432/wordpress"');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', trim($db["path"],"/"));
-// define('DB_NAME', 'wordpress');
+// define('DB_NAME', trim($db["path"],"/"));
+define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
 define('DB_USER', $db["user"]);
@@ -39,8 +39,8 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-define('WP_HOME','coursavenue-blog.heroku.com');
-define('WP_SITEURL','www.coursavenue.com/blog');
+define('WP_HOME','http://coursavenue-blog.heroku.com');
+define('WP_SITEURL','http://www.coursavenue.com/blog');
 
 /**#@+
  * Authentication Unique Keys and Salts.
